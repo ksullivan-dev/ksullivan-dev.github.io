@@ -1,0 +1,407 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html * {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background: #f1f1f1;
+  line-height: 1.4em;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 20px 0 10px;
+  font-weight: bold;
+}
+
+h2 {
+  margin: 0 0 20px;
+  padding: 0 0 20px;
+  border-bottom: 2px solid #4a4a4a;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+h3 {
+  margin: 0 0 20px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 768px) {
+  #desktop {
+    display: none;
+  }
+}
+
+#tablet {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  #tablet {
+    display: block;
+  }
+}
+@media screen and (max-width: 550px) {
+  #tablet {
+    display: none;
+  }
+}
+
+#mobile {
+  display: none;
+}
+@media screen and (max-width: 550px) {
+  #mobile {
+    display: block;
+  }
+}
+
+.site-width {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+}
+.site-width::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+header {
+  display: inline-block;
+  padding: 0 20px;
+  margin-top: 20px;
+}
+header h1 {
+  font-family: 'Fenix', sans-serif;
+}
+
+.menu-container {
+  padding: 0 20px;
+}
+@media screen and (max-width: 550px) {
+  .menu-container {
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+    padding: 0;
+    background: #4a4a4a;
+    left: 100%;
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    top: 120px;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  #menu-toggle:checked ~ .menu-container {
+    background: rgba(0, 0, 0, 0.7);
+    left: 0;
+  }
+}
+
+.main-menu {
+  float: right;
+  overflow: hidden;
+}
+@media screen and (max-width: 550px) {
+  .main-menu {
+    float: none;
+    padding-top: 20px;
+    background: #4a4a4a;
+  }
+}
+
+.menu-container:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.main-menu li {
+  float: left;
+  text-align: center;
+  margin: 0 20px;
+}
+@media screen and (max-width: 550px) {
+  .main-menu li {
+    float: none;
+    margin: 0;
+    background: #4a4a4a;
+    display: block;
+    text-align: left;
+  }
+}
+
+.main-menu li a {
+  color: #D04A52;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: lowercase;
+  display: block;
+}
+@media screen and (max-width: 550px) {
+  .main-menu li a {
+    padding: 15px 20px;
+    color: white;
+  }
+}
+.main-menu li a.active {
+  border-bottom: 2px solid #D04A52;
+  color: #4a4a4a;
+}
+
+body.tablet .main-menu li {
+  margin: 0 14px;
+}
+
+#menu-toggle {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+}
+
+label[for="menu-toggle"] {
+  display: none;
+  width: 32px;
+  height: 28px;
+  position: absolute;
+  top: 38px;
+  right: 0;
+  margin-right: 20px;
+  cursor: pointer;
+}
+@media screen and (max-width: 550px) {
+  label[for="menu-toggle"] {
+    display: block;
+  }
+}
+
+.menu-icon,
+.menu-icon:after,
+.menu-icon:before {
+  top: 12px;
+  left: 0;
+  width: 32px;
+  display: block;
+  background: #4a4a4a;
+  height: 4px;
+  position: absolute;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.menu-icon:after {
+  content: '';
+  top: 12px;
+}
+
+.menu-icon:before {
+  content: '';
+  top: -12px;
+}
+
+#menu-toggle:checked ~ label[for="menu-toggle"] .menu-icon {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transform-origin: center center;
+  -moz-transform-origin: center center;
+  -ms-transform-origin: center center;
+  -o-transform-origin: center center;
+  transform-origin: center center;
+  width: 28px;
+  left: 2px;
+  top: 12px;
+}
+
+#menu-toggle:checked ~ label[for="menu-toggle"] .menu-icon:after,
+#menu-toggle:checked ~ label[for="menu-toggle"] .menu-icon:before {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+  width: 28px;
+  top: 0;
+}
+
+.fixed-container {
+  width: 100%;
+  height: 120px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-top: 10px solid #D04A52;
+  background: #fafafa;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.main-container {
+  padding: 20px;
+  padding-top: 180px;
+}
+
+.main-section {
+  margin-bottom: 80px;
+  min-height: 400px;
+}
+
+.inside-thought {
+  color: #BABABA;
+  font-size: 70%;
+}
+
+.sub-head {
+  font-size: 85%;
+  color: #7a7a7a;
+}
+
+.main-section ul {
+  list-style: disc inside none;
+  margin-bottom: 30px;
+}
+
+.job-container, .sub-job-container {
+  border-left: 4px solid #D04A52;
+  padding-left: 10px;
+}
+
+.sub-job-container {
+  border-left: 4px solid #4a4a4a;
+}
+
+div.button {
+  text-align: center;
+}
+
+.button a {
+  display: inline-block;
+  max-width: 400px;
+  border-radius: 2px;
+  background: #D04A52;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 7px 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.responsive-element {
+  background: red;
+  height: 100px;
+}
+
+@media screen and (max-width: 769px) {
+  .responsive-element {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+  }
+  .responsive-element:last-child {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .responsive-element {
+    background: blue;
+    float: left;
+    display: block;
+    margin-right: 4.82916%;
+    width: 100%;
+    margin-left: 52.41458%;
+  }
+  .responsive-element:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 550px) {
+  .responsive-element {
+    background: pink;
+    float: left;
+    display: block;
+    margin-right: 7.42297%;
+    width: 207.42297%;
+    margin-left: 53.71149%;
+  }
+  .responsive-element:last-child {
+    margin-right: 0;
+  }
+}
+
+/*# sourceMappingURL=application.css.map */
