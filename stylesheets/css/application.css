@@ -93,6 +93,19 @@ h3 {
   font-size: 18px;
 }
 
+strong {
+  font-weight: bold;
+}
+
+a, a:link, a:active {
+  color: #D04A52;
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
 @media screen and (max-width: 768px) {
   #desktop {
     display: none;
@@ -107,7 +120,7 @@ h3 {
     display: block;
   }
 }
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 650px) {
   #tablet {
     display: none;
   }
@@ -116,7 +129,7 @@ h3 {
 #mobile {
   display: none;
 }
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 650px) {
   #mobile {
     display: block;
   }
@@ -145,7 +158,7 @@ header h1 {
 .menu-container {
   padding: 0 20px;
 }
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 650px) {
   .menu-container {
     -webkit-transition: all 0.5s linear;
     -moz-transition: all 0.5s linear;
@@ -162,7 +175,7 @@ header h1 {
   }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 650px) {
   #menu-toggle:checked ~ .menu-container {
     background: rgba(0, 0, 0, 0.7);
     left: 0;
@@ -173,7 +186,7 @@ header h1 {
   float: right;
   overflow: hidden;
 }
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 650px) {
   .main-menu {
     float: none;
     padding-top: 20px;
@@ -192,7 +205,7 @@ header h1 {
   text-align: center;
   margin: 0 20px;
 }
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 650px) {
   .main-menu li {
     float: none;
     margin: 0;
@@ -209,7 +222,7 @@ header h1 {
   text-transform: lowercase;
   display: block;
 }
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 650px) {
   .main-menu li a {
     padding: 15px 20px;
     color: white;
@@ -239,7 +252,7 @@ label[for="menu-toggle"] {
   margin-right: 20px;
   cursor: pointer;
 }
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 650px) {
   label[for="menu-toggle"] {
     display: block;
   }
@@ -358,50 +371,6 @@ div.button {
   padding: 7px 20px;
   text-decoration: none;
   font-weight: bold;
-}
-
-.responsive-element {
-  background: red;
-  height: 100px;
-}
-
-@media screen and (max-width: 769px) {
-  .responsive-element {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 48.82117%;
-  }
-  .responsive-element:last-child {
-    margin-right: 0;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .responsive-element {
-    background: blue;
-    float: left;
-    display: block;
-    margin-right: 4.82916%;
-    width: 100%;
-    margin-left: 52.41458%;
-  }
-  .responsive-element:last-child {
-    margin-right: 0;
-  }
-}
-@media screen and (max-width: 550px) {
-  .responsive-element {
-    background: pink;
-    float: left;
-    display: block;
-    margin-right: 7.42297%;
-    width: 207.42297%;
-    margin-left: 53.71149%;
-  }
-  .responsive-element:last-child {
-    margin-right: 0;
-  }
 }
 
 /*# sourceMappingURL=application.css.map */
