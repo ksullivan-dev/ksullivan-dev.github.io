@@ -42,7 +42,7 @@ function elementInViewportAction() {
 }
 
 function lastChildHeight() {
-    $( '.main-section:last-child' ).css({ 'min-height' : ( window.innerHeight - 130) });
+    $( '.main-section:last-child' ).css({ 'min-height' : ( ( window.innerHeight || document.documentElement.clientHeight ) * 0.66 ) });
 }
 
 function majorBreakpoint() {

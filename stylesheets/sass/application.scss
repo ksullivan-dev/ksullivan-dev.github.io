@@ -179,7 +179,7 @@ label[ for="menu-toggle" ] {
     background: #4a4a4a;
     height: 4px;
     position: absolute;
-    @include transition(all 0.5s ease-in-out);
+    @include transition(all 400ms ease-in-out);
 }
 
 .menu-icon:after {
@@ -213,7 +213,7 @@ label[ for="menu-toggle" ] {
     position: fixed;
     top: 0;
     left: 0;
-    border-top: 10px solid #D04A52;
+    border-top: 10px solid $primary;
     background: #fafafa;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
 }
@@ -223,13 +223,7 @@ label[ for="menu-toggle" ] {
 }
 
 .main-section {
-    margin-bottom: 80px;
-    min-height: 400px
-}
-
-.inside-thought {
-    color: #BABABA;
-    font-size: 70%;
+    padding-bottom: 140px;
 }
 
 .sub-head {
@@ -239,12 +233,12 @@ label[ for="menu-toggle" ] {
 
 .main-section ul {
     list-style: disc inside none;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .job-container, .sub-job-container {
     border-left: 4px solid $primary;
-    padding-left: 10px;
+    padding-left: 20px;
 }
 
 .sub-job-container {border-left: 4px solid #4a4a4a;}
