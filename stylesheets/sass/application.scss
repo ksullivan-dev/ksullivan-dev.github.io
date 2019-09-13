@@ -259,3 +259,69 @@ div.button {
     text-decoration: none;
     font-weight: bold;
 }
+
+.printonly {
+  display: none;
+}
+@media print {
+  .printonly {
+    display: block
+  }
+  .fixed-container {
+    display: block;
+    height: auto;
+    padding-bottom: 20px;
+    position:relative;
+    box-shadow: none;
+    border-bottom: 1px solid gray;
+  }
+  .fixed-container header {
+    display:flex;
+    justify-content: space-between;
+
+  }
+
+  .main-container {
+    padding-top: 30px
+  }
+
+  .noprint {
+    display: none;
+  }
+
+  .main-section {
+    padding: 0;
+  }
+
+  .main-section ul {
+    list-style: disc outside none;
+    padding-left:16px
+  }
+
+  #left-col {
+    float:left;
+    width:70%;
+    padding-right:40px;
+    box-sizing: border-box;
+  }
+  #right-col {
+    float:left;
+    width:30%
+  }
+
+  #right-col li {
+    margin-bottom: 4px;
+    color: #424242
+  }
+
+  a, a:link {
+    color: #424242;
+    text-decoration: none;
+  }
+  a:after {
+    content: " [" attr(href) "]"
+  }
+  .site-width {
+    max-width: none;
+  }
+}
