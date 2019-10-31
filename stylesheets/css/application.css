@@ -299,6 +299,38 @@ div.button {
   padding: 7px 20px;
   text-decoration: none;
   font-weight: bold; }
+ul.less-margin {
+  margin-bottom: 20px;
+}
+ul.flexlist {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  margin: -10px -10px 20px;
+}
+
+ul.flexlist li {
+  padding: 5px 10px;
+  margin: 10px;
+  list-style: none;
+  border-radius: 3px;
+  border: 1px solid rgba(180,180,180,0.75);
+/*   box-shadow: 1px 1px 3px rgba(0,0,0,0.5) */
+}
+
+li .skill {
+  font-weight:600;
+  display:block;
+}
+
+li .time {
+  color:gray;
+  font-weight:100;
+  font-size:11px;
+  text-align: center;
+  display: block;
+  line-height: 11px
+}
 
 .printonly {
   display: none;
