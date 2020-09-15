@@ -1,428 +1,726 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <title>Kyle Sullivan - Resume</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="./stylesheets/css/application.css" />
-    <link href='https://fonts.googleapis.com/css?family=Fenix|Roboto:400,700' rel='stylesheet' type='text/css'>
+    <link
+      href="https://fonts.googleapis.com/css?family=Fenix|Roboto:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="site-width">
-        <div id="breakpoints">
-            <div id="desktop"></div>
-            <div id="tablet"></div>
-            <div id="mobile"></div>
+      <div id="breakpoints">
+        <div id="desktop"></div>
+        <div id="tablet"></div>
+        <div id="mobile"></div>
+      </div>
+      <div class="fixed-container">
+        <header>
+          <div class="printonly">
+            1170 Crabapple Cir<br />Watkinsville, GA 30677
+          </div>
+          <h1>Kyle Sullivan</h1>
+          <div class="printonly">706.877.1115<br />kylepsullivan@gmail.com</div>
+        </header>
+        <div class="noprint">
+          <input type="checkbox" id="menu-toggle" />
+          <label for="menu-toggle"><span class="menu-icon"></span></label>
+          <div class="menu-container">
+            <ul class="main-menu menu">
+              <li><a href="#intro">Intro</a></li>
+              <li><a href="#relevant">Relevant Experience</a></li>
+              <li><a href="#other">Other Jobs</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#education">Education</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
         </div>
-        <div class="fixed-container">
-            <header>
-                <div class="printonly">1170 Crabapple Cir<br />Watkinsville, GA 30677</div>
-                <h1>Kyle Sullivan</h1>
-                <div class="printonly">706.877.1115<br />kylepsullivan@gmail.com</div>
-            </header>
-            <div class="noprint">
-                <input type="checkbox" id="menu-toggle" />
-                <label for="menu-toggle"><span class="menu-icon"></span></label>
-                <div class="menu-container">
-                    <ul class="main-menu menu">
-                        <li><a href="#intro">Intro</a></li>
-                        <li><a href="#relevant">Relevant Experience</a></li>
-                        <li><a href="#other">Other Jobs</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#education">Education</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
+      </div>
+      <div class="main-container">
+        <div id="left-col">
+          <div id="intro" class="main-section">
+            <h2>Intro</h2>
+            <p>
+              I am a seasoned web developer with a passion for improving the
+              user's experience and over 10 years of professional expertise. I
+              have dabbled in backend work but I prefer working with javascript,
+              HTML and CSS on the front end. I have spent most of the last three
+              years developing in React and it is my go-to tool for developing
+              dynamic frontends.
+            </p>
+            <h2>Skills and Languages</h2>
+            <ul class="flexlist">
+              <li>
+                <span class="skill">HTML</span>
+                <span class="time">10 years</span>
+              </li>
+              <li>
+                <span class="skill">CSS</span>
+                <span class="time">10 years</span>
+              </li>
+              <li>
+                <span class="skill">Javascript</span>
+                <span class="time">8 years</span>
+              </li>
+              <li>
+                <span class="skill">React</span>
+                <span class="time">3 year</span>
+              </li>
+              <li>
+                <span class="skill">Node</span>
+                <span class="time">3 years</span>
+              </li>
+              <li>
+                <span class="skill">Webpack</span>
+                <span class="time">3 year</span>
+              </li>
+              <li>
+                <span class="skill">Express</span>
+                <span class="time">3 year</span>
+              </li>
+              <li>
+                <span class="skill">Git</span>
+                <span class="time">8 years</span>
+              </li>
+              <li>
+                <span class="skill">Sass</span>
+                <span class="time">5 years</span>
+              </li>
+              <li>
+                <span class="skill">Less</span>
+                <span class="time">4 years</span>
+              </li>
+              <li>
+                <span class="skill">Backbone</span>
+                <span class="time">4 years</span>
+              </li>
+              <li>
+                <span class="skill">jQuery</span>
+                <span class="time">7 years</span>
+              </li>
+              <li>
+                <span class="skill">Ruby</span>
+                <span class="time">1 year</span>
+              </li>
+              <li>
+                <span class="skill">Ruby on Rails</span>
+                <span class="time">1 year</span>
+              </li>
+              <li>
+                <span class="skill">Grunt</span>
+                <span class="time">1 year</span>
+              </li>
+              <li>
+                <span class="skill">Gulp</span>
+                <span class="time">2 years</span>
+              </li>
+              <li>
+                <span class="skill">MySQL</span>
+                <span class="time">3 year</span>
+              </li>
+              <li>
+                <span class="skill">Postgres</span>
+                <span class="time">1 year</span>
+              </li>
+              <li>
+                <span class="skill">AWS</span>
+                <span class="time">1 year</span>
+              </li>
+            </ul>
+          </div>
+          <div id="relevant" class="main-section">
+            <h2>Relevant Experience</h2>
+            <div class="job-container">
+              <h3>
+                Loyal Health &raquo;
+                <span class="sub-head"
+                  >Atlanta, GA <br />December 2019 - Present</span
+                >
+              </h3>
+              <p><strong>Frontend Developer</strong></p>
+              <p>
+                <strong>Tech: </strong>React, Redux, Styled Component, Webpack,
+                Babel, Cypress
+              </p>
+              <ul>
+                <li>
+                  Implement dynamic frontends for multiple applications in
+                  support of healthcare systems
+                </li>
+                <li>
+                  Establish javascript code standards via Prettier and ESLint
+                </li>
+                <li>
+                  Participate in code reviews to help foster better developers
+                  and development practices
+                </li>
+                <li>
+                  Restructure and refactor legacy codebase while modernizing and
+                  strengthening underlying application
+                </li>
+                <li>
+                  Provide input and feedback to design team with regards to user
+                  experience and overall functionality
+                </li>
+                <li>
+                  Create reusuable component library to be used across multiple
+                  applications
+                </li>
+                <li>
+                  Build documentation site serving internal employees and
+                  external developers
+                </li>
+              </ul>
             </div>
-
+            <div class="job-container">
+              <h3>
+                Cafe au Chain &raquo;
+                <span class="sub-head"
+                  >Athens, GA <br />January 2018 - December 2019</span
+                >
+              </h3>
+              <p><strong>Co-Founder/Lead Frontend Developer</strong></p>
+              <p>
+                <strong>Tech: </strong>AWS, Postgres, Ruby, Ruby on Rails, React
+              </p>
+              <ul>
+                <li>
+                  Designed, built and maintained full front end (React, Sass,
+                  HTML) of SaaS web app that provided inventory and production
+                  management as well as wholesale ordering for speciality coffee
+                  roasters
+                </li>
+                <li>
+                  Built 60-80% of wholesale ordering functionality using Ruby on
+                  Rails
+                </li>
+                <li>
+                  Created migrations, models, controllers and services as
+                  necessary to add additional features
+                </li>
+                <li>
+                  Integrated payment processor (Stripe) to allow roasters to
+                  process payments for orders from wholesale customers
+                </li>
+                <li>
+                  Incorporated third-party shipping api (EasyPost) to let
+                  roasters get accurate shipping quotes
+                </li>
+                <li>Used Git for version control</li>
+              </ul>
+            </div>
+            <div class="job-container">
+              <h3>
+                Hounddog Development &raquo;
+                <span class="sub-head"
+                  >Watkinsville, GA <br />March 2018 - December 2019</span
+                >
+              </h3>
+              <p><strong>Freelance Frontend Developer/Owner</strong></p>
+              <ul class="less-margin">
+                <li>
+                  Utilized javascript (mostly React), Sass and HTML to deliver
+                  web solutions for small businesses
+                </li>
+              </ul>
+              <p><strong>Projects include:</strong></p>
+              <ul>
+                <li>
+                  Financial web app to project future cash flow based on
+                  recurring monthly spending (MySql, Node, Express, React,
+                  Styled Components)
+                </li>
+                <li>
+                  Inventory/order management web app for online resellers
+                  (MySQL, Node, Express, React and Sass)
+                </li>
+                <li>
+                  Tool to help resellers analyze manifested purchase orders to
+                  determine potential profit (Backbone, HTML, Sass)
+                </li>
+                <li>
+                  Private Chrome extension to manage inventory and cost of goods
+                  sold (HTML, CSS, vanilla js)
+                </li>
+                <li>
+                  Private Chrome extension to help replicate listings across
+                  multiple platforms (HTML, CSS, vanilla js)
+                </li>
+              </ul>
+            </div>
+            <div class="job-container">
+              <h3>
+                Roundsphere &raquo;
+                <span class="sub-head"
+                  >Athens, GA <br />October 2016 - July 2018</span
+                >
+              </h3>
+              <p><strong>Front End Developer</strong></p>
+              <ul>
+                <li>
+                  Rebuilt, updated and maintained front-end of multiple web apps
+                  to drive the company’s SaaS-based businesses utilizing
+                  Backbone.js, Sass, HTML, Gulp, Git
+                </li>
+                <li>
+                  Worked closely with the Backend Architect to implement
+                  features and changes
+                </li>
+                <li>
+                  Consulted with CEO on new app-related opportunities, both to
+                  existing products and new solutions
+                </li>
+                <li>Served as the user experience subject matter expert</li>
+                <li>
+                  Built and updated multiple Chrome browser extensions for
+                  various clients
+                </li>
+              </ul>
+            </div>
+            <div class="job-container">
+              <h3>
+                Dynamix Web Design &raquo;
+                <span class="sub-head"
+                  >Kennesaw, GA <br />January 2016 - October 2016</span
+                >
+              </h3>
+              <p><strong>Front End Developer</strong></p>
+              <ul>
+                <li>
+                  Developed responsive websites based on mockup and/or
+                  wireframes with HTML, CSS (LESS), Javascript and PHP
+                </li>
+                <li>
+                  Integrated custom Google Maps functionality using Google Maps
+                  API
+                </li>
+                <li>
+                  Worked closely with designers to achieve the look, feel and
+                  functionality desired by the client
+                </li>
+                <li>Used Git for version control</li>
+              </ul>
+            </div>
+            <div class="job-container">
+              <h3>
+                MemberClicks &raquo;
+                <span class="sub-head"
+                  >Atlanta, GA <br />October 2011 - November 2015</span
+                >
+              </h3>
+              <div class="sub-job-container">
+                <p>
+                  <strong
+                    >Associate Software Engineer <br /><span class="sub-head"
+                      >January 2015 - November 2015</span
+                    ></strong
+                  >
+                </p>
+                <ul>
+                  <li>
+                    Utilized Javascript, HTML, CSS and some PHP to create new
+                    features in the administrative portal as part of a
+                    development team
+                  </li>
+                  <li>
+                    Served as the subject matter expert with regards to HTML and
+                    CSS
+                  </li>
+                  <li>Participated in team status and planning meetings</li>
+                  <li>
+                    Used Git as version control system to commit and review code
+                  </li>
+                </ul>
+              </div>
+              <div class="sub-job-container">
+                <p>
+                  <strong
+                    >Admin-side Web Developer <br /><span class="sub-head"
+                      >January 2015 - March 2015</span
+                    ></strong
+                  >
+                </p>
+                <ul>
+                  <li>
+                    Assisted in the planning and redesign of the administrative
+                    side of the product with a focus on a simple yet unique
+                    aesthetic and improved user experience
+                  </li>
+                </ul>
+              </div>
+              <div class="sub-job-container">
+                <p>
+                  <strong
+                    >Existing Client Web Developer <br /><span class="sub-head"
+                      >January 2013 - December 2014</span
+                    ></strong
+                  >
+                </p>
+                <ul>
+                  <li>Created stylesheets for non-templated redesigns</li>
+                  <li>Customized templated redesigns</li>
+                  <li>Supported and fixed bugs in the template library</li>
+                  <li>
+                    Built and standardized email templates to be used by all
+                    clients using the MemberClicks email system
+                  </li>
+                  <li>
+                    Developed all responsive templates in the template library
+                  </li>
+                  <li>
+                    Provided support for design-related requests from clients
+                  </li>
+                  <li>
+                    Acted as technical expert in regards to design-related
+                    questions/issues
+                  </li>
+                </ul>
+              </div>
+              <div class="sub-job-container">
+                <p>
+                  <strong
+                    >Maximization Specialist <br /><span class="sub-head"
+                      >May 2012 - December 2014</span
+                    ></strong
+                  >
+                </p>
+                <ul>
+                  <li>
+                    Provided support and training to clients via individual
+                    communication and group webinars
+                  </li>
+                  <li>
+                    Sold design packages to existing clients interested in
+                    updating their websites
+                  </li>
+                  <li>
+                    Participated in various value-added campaigns focused on
+                    increasing client retention
+                  </li>
+                  <li>
+                    Created documentation for various applications within the
+                    product offering, with a focus on design- and CMS-related
+                    areas
+                  </li>
+                </ul>
+              </div>
+              <div class="sub-job-container">
+                <p>
+                  <strong
+                    >Associate Web Designer <br /><span class="sub-head"
+                      >October 2011 - August 2012</span
+                    ></strong
+                  >
+                </p>
+                <ul>
+                  <li>
+                    Created stylesheets for custom website templates and website
+                    matches for membership modules
+                  </li>
+                  <li>Built out site content on behalf of clients</li>
+                </ul>
+              </div>
+              <div class="sub-job-container">
+                <p>
+                  <strong
+                    >Web Content Quality Assurance <br /><span class="sub-head"
+                      >October 2011 - August 2012</span
+                    ></strong
+                  >
+                </p>
+                <ul>
+                  <li>
+                    Assisted in the upgrade process, moving the content of
+                    existing clients' websites to a new content management
+                    system
+                  </li>
+                  <li>
+                    Assured that clients' content in the new CMS reflected the
+                    look and feel of the old CMS in multiple supported browsers
+                  </li>
+                  <li>Fixed any broken pages due to invalid HTML</li>
+                </ul>
+              </div>
+            </div>
+            <div class="job-container">
+              <h3>
+                Kitchen Sink Marketing &raquo;
+                <span class="sub-head"
+                  >Atlanta, GA <br />September 2010 - October 2011</span
+                >
+              </h3>
+              <p><strong>Independent Web Designer/Owner</strong></p>
+              <ul>
+                <li>
+                  Designed and developed web solutions for small businesses and
+                  organizations
+                </li>
+                <li>Wrote proposal and/or contract for each client</li>
+                <li>
+                  Created print advertisements to be run in local newspaper
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class="main-container">
-            <div id="left-col">
-                <div id="intro" class="main-section">
-                    <h2>Intro</h2>
-                    <p>I'm a freelance web developer with a passion for improving the user's experience and over 9 years
-                        of
-                        professional expertise. I've dabbled in backend work but I prefer working with javascript, HTML
-                        and
-                        CSS on the front end. I've spent the majority of the last year working almost exclusively with
-                        React.</p>
-                        <h2>Skills and Languages</h2>
-                        <ul class="flexlist">
-                            <li>
-                                <span class="skill">HTML</span>
-                                <span class="time">9 years</span>
-                            </li>
-                            <li>
-                                <span class="skill">CSS</span>
-                                <span class="time">9 years</span>
-                            </li>
-                            <li>
-                                <span class="skill">Sass</span>
-                                <span class="time">5 years</span>
-                            </li>
-                            <li>
-                                <span class="skill">Less</span>
-                                <span class="time">4 years</span>
-                            </li>
-                            <li>
-                                <span class="skill">Javascript</span>
-                                <span class="time">7 years</span>
-                            </li>
-                            <li>
-                                <span class="skill">React</span>
-                                <span class="time">1 year</span>
-                            </li>
-                            <li>
-                                <span class="skill">Backbone</span>
-                                <span class="time">4 years</span>
-                            </li>
-                            <li>
-                                <span class="skill">jQuery</span>
-                                <span class="time">7 years</span>
-                            </li>
-                            <li>
-                                <span class="skill">Ruby</span>
-                                <span class="time">1 year</span>
-                            </li>
-                            <li>
-                                <span class="skill">Ruby on Rails</span>
-                                <span class="time">1 year</span>
-                            </li>
-                            <li>
-                                <span class="skill">Node</span>
-                                <span class="time">2 years</span>
-                            </li>
-                            <li>
-                                <span class="skill">Grunt</span>
-                                <span class="time">1 year</span>
-                            </li>
-                            <li>
-                                <span class="skill">Gulp</span>
-                                <span class="time">2 years</span>
-                            </li>
-                            <li>
-                                <span class="skill">Webpack</span>
-                                <span class="time">1 year</span>
-                            </li>
-                            <li>
-                                <span class="skill">Express</span>
-                                <span class="time">1 year</span>
-                            </li>
-                            <li>
-                                <span class="skill">MySQL</span>
-                                <span class="time">1 year</span>
-                            </li>
-                            <li>
-                                <span class="skill">Postgres</span>
-                                <span class="time">1 year</span>
-                            </li>
-                            <li>
-                                <span class="skill">Git</span>
-                                <span class="time">7 years</span>
-                            </li>
-                            <li>
-                                <span class="skill">AWS</span>
-                                <span class="time">1 year</span>
-                            </li>
-                        </ul>
-                    <p class="noprint">I've divided this resume into six parts: <strong>Intro, Relevant Experience,
-                            Other
-                            Jobs, Portfolio,
-                            Education and Contact</strong>. If you have any questions, please let me know.</p>
-                </div>
-                <div id="relevant" class="main-section">
-                    <h2>Relevant Experience</h2>
-                    <div class="job-container">
-                        <h3>Cafe au Chain &raquo; <span class="sub-head">Athens, GA <br />January 2018 - Present</span>
-                        </h3>
-                        <p><strong>Co-Founder/Lead Frontend Developer</strong></p>
-                        <p><strong>Stack:</strong> AWS, Postgres (10.6), Ruby (2.4.5), Ruby on Rails (5.2.3), React (16.9)</p>
-                        <ul>
-                            <li>Design, build and maintain full front end (React, Sass, HTML) of SaaS web app that
-                                provides inventory and production management as well as wholesale ordering for 
-                                speciality coffee roasters</li>
-                            <li>Build 60-80% of wholesale ordering functionality using Ruby on Rails</li>
-                            <li>Create migrations, models, controllers and services as necessary to add additional features</li>
-                            <li>Integrate payment processor (Stripe) to allow roasters to process payments for orders
-                                from wholesale customers</li>
-                            <li>Incorporate third-party shipping api (EasyPost) to let roasters get accurate shipping
-                                quotes</li>
-                            <li>Used Git for version control</li>
-                        </ul>
-                    </div>
-                    <div class="job-container">
-                        <h3>Hounddog Development &raquo; <span class="sub-head">Watkinsville, GA <br />March 2018 -
-                                Present</span></h3>
-                        <p><strong>Freelance Frontend Developer/Owner</strong></p>
-                        <ul class="less-margin">
-                            <li>Catchall company for freelance development</li>
-                            <li>Utilize javascript (mostly React), Sass and HTML to deliver web solutions for small
-                                businesses</li> 
-                        </ul>
-                        <p><strong>Projects include:</strong></p>
-                        <ul>
-                            <li>Inventory/order management web app for online resellers (MySQL, Node.js, Express,
-                                React and Sass)</li>
-                            <li>Tool to help resellers analyze manifested purchase orders to determine potential profit (Backbone,
-                                HTML, Sass)</li>
-                            <li>Private Chrome extension to manage inventory and cost of goods sold (HTML, CSS, vanilla js)</li>
-                            <li>Private Chrome extension to help replicate listings across multiple platforms (HTML, CSS, vanilla js)</li>
-                        </ul>
-                    </div>
-                    <div class="job-container">
-                        <h3>Roundsphere &raquo; <span class="sub-head">Athens, GA <br />October 2016 - July 2018</span>
-                        </h3>
-                        <p><strong>Front End Developer</strong></p>
-                        <ul>
-                            <li>Rebuilt, updated and maintained front-end of multiple web apps to drive the company’s
-                                SaaS-based businesses utilizing Backbone.js, Sass, HTML, Gulp, Git</li>
-                            <li>Worked closely with the Backend Architect to implement features and changes</li>
-                            <li>Consulted with CEO on new app-related opportunities, both to existing products and new
-                                solutions</li>
-                            <li>Served as the user experience subject matter expert</li>
-                            <li>Built and updated multiple Chrome browser extensions for various clients</li>
-                        </ul>
-                    </div>
-                    <div class="job-container">
-                        <h3>Dynamix Web Design &raquo; <span class="sub-head">Kennesaw, GA <br />January 2016 - October
-                                2016</span></h3>
-                        <p><strong>Front End Developer</strong></p>
-                        <ul>
-                            <li>Developed responsive websites based on mockup and/or wireframes with HTML, CSS (LESS),
-                                Javascript and PHP</li>
-                            <li>Integrated custom Google Maps functionality using Google Maps API</li>
-                            <li>Worked closely with designers to achieve the look, feel and functionality desired by the
-                                client</li>
-                            <li>Used Git for version control</li>
-                        </ul>
-                    </div>
-                    <div class="job-container">
-                        <h3>MemberClicks &raquo; <span class="sub-head">Atlanta, GA <br />October 2011 - November
-                                2015</span></h3>
-                        <div class="sub-job-container">
-                            <p><strong>Associate Software Engineer <br /><span class="sub-head">January 2015 - November
-                                        2015</span></strong></p>
-                            <ul>
-                                <li>Utilized Javascript, HTML, CSS and some PHP to create new features in the
-                                    administrative
-                                    portal as part of a development team</li>
-                                <li>Served as the subject matter expert with regards to HTML and CSS</li>
-                                <li>Participated in team status and planning meetings</li>
-                                <li>Used Git as version control system to commit and review code</li>
-                            </ul>
-                        </div>
-                        <div class="sub-job-container">
-                            <p><strong>Admin-side Web Developer <br /><span class="sub-head">January 2015 - March
-                                        2015</span></strong></p>
-                            <ul>
-                                <li>Assisted in the planning and redesign of the administrative side of the product with
-                                    a
-                                    focus on a simple yet unique aesthetic and improved user experience</li>
-                            </ul>
-                        </div>
-                        <div class="sub-job-container">
-                            <p><strong>Existing Client Web Developer <br /><span class="sub-head">January 2013 -
-                                        December
-                                        2014</span></strong></p>
-                            <ul>
-                                <li>Created stylesheets for non-templated redesigns</li>
-                                <li>Customized templated redesigns</li>
-                                <li>Supported and fixed bugs in the template library</li>
-                                <li>Built and standardized email templates to be used by all clients using the
-                                    MemberClicks
-                                    email system</li>
-                                <li>Developed all responsive templates in the template library</li>
-                                <li>Provided support for design-related requests from clients</li>
-                                <li>Acted as technical expert in regards to design-related questions/issues</li>
-                            </ul>
-                        </div>
-                        <div class="sub-job-container">
-                            <p><strong>Maximization Specialist <br /><span class="sub-head">May 2012 - December
-                                        2014</span></strong></p>
-                            <ul>
-                                <li>Provided support and training to clients via individual communication and group
-                                    webinars
-                                </li>
-                                <li>Sold design packages to existing clients interested in updating their websites</li>
-                                <li>Participated in various value-added campaigns focused on increasing client retention
-                                </li>
-                                <li>Created documentation for various applications within the product offering, with a
-                                    focus
-                                    on design- and CMS-related areas</li>
-                            </ul>
-                        </div>
-                        <div class="sub-job-container">
-                            <p><strong>Associate Web Designer <br /><span class="sub-head">October 2011 - August
-                                        2012</span></strong></p>
-                            <ul>
-                                <li>Created stylesheets for custom website templates and website matches for membership
-                                    modules</li>
-                                <li>Built out site content on behalf of clients</li>
-                            </ul>
-                        </div>
-                        <div class="sub-job-container">
-                            <p><strong>Web Content Quality Assurance <br /><span class="sub-head">October 2011 - August
-                                        2012</span></strong></p>
-                            <ul>
-                                <li>Assisted in the upgrade process, moving the content of existing clients' websites to
-                                    a
-                                    new content management system</li>
-                                <li>Assured that clients' content in the new CMS reflected the look and feel of the old
-                                    CMS
-                                    in multiple supported browsers</li>
-                                <li>Fixed any broken pages due to invalid HTML</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="job-container">
-                        <h3>Kitchen Sink Marketing &raquo; <span class="sub-head">Atlanta, GA <br />September 2010 -
-                                October
-                                2011</span></h3>
-                        <p><strong>Independent Web Designer/Owner</strong></p>
-                        <ul>
-                            <li>Designed and developed web solutions for small businesses and organizations</li>
-                            <li>Wrote proposal and/or contract for each client</li>
-                            <li>Created print advertisements to be run in local newspaper</li>
-                        </ul>
-                    </div>
-                </div>
+        <div id="right-col">
+          <div id="other" class="main-section noprint">
+            <h2>Other Jobs</h2>
+            <div class="job-container">
+              <h3>
+                PureSpectrum Lighting &raquo;
+                <span class="sub-head"
+                  >Savannah, GA <br />January 2010 - August 2010</span
+                >
+              </h3>
+              <p><strong>Sales Program Coordinator</strong></p>
+              <ul>
+                <li>
+                  Created and managed sales materials, including printed and
+                  interactive documents
+                </li>
+                <li>
+                  Updated and maintained the corporate and investor websites
+                </li>
+                <li>Coordinated and tracked sales efforts of Sales Managers</li>
+                <li>
+                  Worked with Sales Managers to ensure samples and sales
+                  materials were delivered to prospects/clients in the most
+                  cost-effective and timely manner
+                </li>
+              </ul>
             </div>
-            <div id="right-col">
-                <div id="other" class="main-section noprint">
-                    <h2>Other Jobs</h2>
-                    <div class="job-container">
-                        <h3>PureSpectrum Lighting &raquo; <span class="sub-head">Savannah, GA <br />January 2010 -
-                                August
-                                2010</span></h3>
-                        <p><strong>Sales Program Coordinator</strong></p>
-                        <ul>
-                            <li>Created and managed sales materials, including printed and interactive documents</li>
-                            <li>Updated and maintained the corporate and investor websites</li>
-                            <li>Coordinated and tracked sales efforts of Sales Managers</li>
-                            <li>Worked with Sales Managers to ensure samples and sales materials were delivered to
-                                prospects/clients in the most cost-effective and timely manner</li>
-                        </ul>
-                    </div>
-                    <div class="job-container">
-                        <h3>The First Tee Louisville &raquo; <span class="sub-head">Louisville, KY <br />April 2009 -
-                                August
-                                2010</span></h3>
-                        <p><strong>Administrative Coordinator</strong></p>
-                        <ul>
-                            <li>Updated and maintained the organization's website</li>
-                            <li>Produced and managed email communication between the organization and its membership
-                            </li>
-                            <li>Created and controlled online registrations</li>
-                        </ul>
-                    </div>
-                    <div class="job-container">
-                        <h3>Shawnee Golf Course &raquo; <span class="sub-head">Louisville, KY <br />April 2009 -
-                                December
-                                2009</span></h3>
-                        <p><strong>Pro Shop Assistant</strong></p>
-                        <ul>
-                            <li>Assisted with online marketing initiatives, including email and online promotions</li>
-                            <li>Opened, operated, and closed point-of-sale registers; managed tee sheet for golf course
-                                with
-                                over 40,000 rounds yearly; prepared daily business reports; assisted with tournament
-                                operations</li>
-                        </ul>
-                    </div>
-                    <div class="job-container">
-                        <h3>American Junior Golf Association &raquo; <span class="sub-head">Braselton, GA <br />March
-                                2008 -
-                                September 2008</span></h3>
-                        <p><strong>In-house Purchasing/Operations Intern</strong></p>
-                        <ul>
-                            <li>Assisted Director of Purchasing with the shipping and receiving of merchandise with
-                                regards
-                                to the tournaments run by the AJGA</li>
-                            <li>Managed and distributed inventory of tournament-related merchandise</li>
-                            <li>Provided support for the Tournament Directors from the national headquarters</li>
-                            <li>Coordinated and booked travel for staff and interns</li>
-                            <li>Gathered and compiled data from pre- and post-tournament information</li>
-                            <li>Received and coded invoices from vendors</li>
-                            <li>Traveled to locations to help run tournaments, including set-up, breakdown, and
-                                administration of rules for groups of players</li>
-                        </ul>
-                    </div>
-                    <div class="job-container">
-                        <h3>Relay Worldwide &raquo; <span class="sub-head">Atlanta, GA <br />June 2007 - August
-                                2007</span>
-                        </h3>
-                        <p><strong>Full-time Intern</strong></p>
-                        <ul>
-                            <li>Worked as part of the AT&amp;T Mobility team (Hispanic Agency of Record)</li>
-                            <li>Assisted with the sponsorship activation for the Coca-Cola account</li>
-                            <li>Participated in weekly status/update calls with clients, markets, and staff</li>
-                            <li>Researched grassroots marketing opportunities within markets and competitors to more
-                                effectively reach target audience</li>
-                        </ul>
-                    </div>
-                </div>
-                <div id="portfolio" class="main-section">
-                    <h2>Portfolio</h2>
-                    <h3>Custom designs</h3>
-                    <ul>
-                        <li><a href="https://bookscouter.com/" target="_blank">BookScouter</a> (Roundsphere)</li>
-                        <li><a href="https://mousedining.com/" target="_blank">MouseDining</a> (Roundsphere)</li>
-                        <li><a href="https://guardiancenters.com/" target="_blank">Guardian Centers</a> (Dynamix)</li>
-                        <li><a href="http://chick-fil-afoundation.org/" target="_blank">Chick-fil-A Foundation</a>
-                            (Dynamix)</li>
-                        <li><a href="http://islandlawncare.com/" target="_blank">Island Lawn Care</a> (Dynamix)</li>
-                    </ul>
-                    <h3>Google Map Integrations</h3>
-                    <ul>
-                        <li><a href="http://atlantatrackclub.org/calendar" target="_blank">Atlanta Track Club Community
-                                Calendar Map</a><br />
-                            This project required that 2 different types of events be displayed on the map while also
-                            allowing the results to be filtered by date and event type. Additionaly, a sidebar was
-                            necessary
-                            to display all the events within the filtered range. The map points would open a detail
-                            modal
-                            and events within a given distance would need to be combined.
-                        </li>
-                        <li><a href="http://chick-fil-afoundation.org/junior-achievement">Chick-fil-A Foundation Junior
-                                Achievement Capstone Facilities Map</a><br />
-                            This project mapped several different locations and included a detail modal. Each location
-                            consists of several operators that are populated into a list below the map and must update
-                            when
-                            the map point is clicked.
-                        </li>
-                    </ul>
-                    <h3 class="noprint">Responsive Templates for MemberClicks</h3>
-                    <ul class="noprint">
-                        <li><a href="https://resp.memberclicks.net/decatur" target="_blank">Decatur</a></li>
-                        <li><a href="https://resp.memberclicks.net/edgewood" target="_blank">Edgewood</a></li>
-                        <li><a href="https://resp.memberclicks.net/marietta" target="_blank">Marietta</a></li>
-                        <li><a href="https://resp.memberclicks.net/buckhead" target="_blank">Buckhead</a></li>
-                        <li><a href="https://resp.memberclicks.net/vinings" target="_blank">Vinings</a></li>
-                    </ul>
-
-                </div>
-                <div id="education" class="main-section">
-                    <h2>Education</h2>
-                    <h3>University of Georgia</h3>
-                    <p><strong>Bachelor of Arts in Journalism, Advertising <br /><span class="sub-head">December
-                                2007</span></strong></p>
-                    <p><strong>Bachelor of Science in Education, Sport Studies <br /><span class="sub-head">December
-                                2007</span></strong></p>
-                </div>
-                <div id="contact" class="main-section noprint">
-                    <h2>Contact</h2>
-                    <p>If you have any questions, please feel free to send me an email and I'll get back to you as soon
-                        as
-                        possible.</p>
-                    <div class="button"><a href="mailto:kylepsullivan@gmail.com?subject=Message from Resume site">Send
-                            Me An
-                            Email</a></div>
-                </div>
+            <div class="job-container">
+              <h3>
+                The First Tee Louisville &raquo;
+                <span class="sub-head"
+                  >Louisville, KY <br />April 2009 - August 2010</span
+                >
+              </h3>
+              <p><strong>Administrative Coordinator</strong></p>
+              <ul>
+                <li>Updated and maintained the organization's website</li>
+                <li>
+                  Produced and managed email communication between the
+                  organization and its membership
+                </li>
+                <li>Created and controlled online registrations</li>
+              </ul>
             </div>
+            <div class="job-container">
+              <h3>
+                Shawnee Golf Course &raquo;
+                <span class="sub-head"
+                  >Louisville, KY <br />April 2009 - December 2009</span
+                >
+              </h3>
+              <p><strong>Pro Shop Assistant</strong></p>
+              <ul>
+                <li>
+                  Assisted with online marketing initiatives, including email
+                  and online promotions
+                </li>
+                <li>
+                  Opened, operated, and closed point-of-sale registers; managed
+                  tee sheet for golf course with over 40,000 rounds yearly;
+                  prepared daily business reports; assisted with tournament
+                  operations
+                </li>
+              </ul>
+            </div>
+            <div class="job-container">
+              <h3>
+                American Junior Golf Association &raquo;
+                <span class="sub-head"
+                  >Braselton, GA <br />March 2008 - September 2008</span
+                >
+              </h3>
+              <p><strong>In-house Purchasing/Operations Intern</strong></p>
+              <ul>
+                <li>
+                  Assisted Director of Purchasing with the shipping and
+                  receiving of merchandise with regards to the tournaments run
+                  by the AJGA
+                </li>
+                <li>
+                  Managed and distributed inventory of tournament-related
+                  merchandise
+                </li>
+                <li>
+                  Provided support for the Tournament Directors from the
+                  national headquarters
+                </li>
+                <li>Coordinated and booked travel for staff and interns</li>
+                <li>
+                  Gathered and compiled data from pre- and post-tournament
+                  information
+                </li>
+                <li>Received and coded invoices from vendors</li>
+                <li>
+                  Traveled to locations to help run tournaments, including
+                  set-up, breakdown, and administration of rules for groups of
+                  players
+                </li>
+              </ul>
+            </div>
+            <div class="job-container">
+              <h3>
+                Relay Worldwide &raquo;
+                <span class="sub-head"
+                  >Atlanta, GA <br />June 2007 - August 2007</span
+                >
+              </h3>
+              <p><strong>Full-time Intern</strong></p>
+              <ul>
+                <li>
+                  Worked as part of the AT&amp;T Mobility team (Hispanic Agency
+                  of Record)
+                </li>
+                <li>
+                  Assisted with the sponsorship activation for the Coca-Cola
+                  account
+                </li>
+                <li>
+                  Participated in weekly status/update calls with clients,
+                  markets, and staff
+                </li>
+                <li>
+                  Researched grassroots marketing opportunities within markets
+                  and competitors to more effectively reach target audience
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div id="portfolio" class="main-section">
+            <h2>Portfolio</h2>
+            <h3 class="noprint">Custom designs</h3>
+            <ul>
+              <li>
+                <a href="https://bookscouter.com/" target="_blank"
+                  >BookScouter</a
+                >
+                (Roundsphere)
+              </li>
+              <li>
+                <a href="https://mousedining.com/" target="_blank"
+                  >MouseDining</a
+                >
+                (Roundsphere)
+              </li>
+              <li>
+                <a href="https://guardiancenters.com/" target="_blank"
+                  >Guardian Centers</a
+                >
+                (Dynamix)
+              </li>
+              <li>
+                <a href="http://chick-fil-afoundation.org/" target="_blank"
+                  >Chick-fil-A Foundation</a
+                >
+                (Dynamix)
+              </li>
+              <li>
+                <a href="http://islandlawncare.com/" target="_blank"
+                  >Island Lawn Care</a
+                >
+                (Dynamix)
+              </li>
+            </ul>
+            <h3 class="noprint">Google Map Integrations</h3>
+            <ul class="noprint">
+              <li>
+                <a href="http://atlantatrackclub.org/calendar" target="_blank"
+                  >Atlanta Track Club Community Calendar Map</a
+                ><br />
+                This project required that 2 different types of events be
+                displayed on the map while also allowing the results to be
+                filtered by date and event type. Additionaly, a sidebar was
+                necessary to display all the events within the filtered range.
+                The map points would open a detail modal, and events within a
+                given distance would need to be combined.
+              </li>
+              <li>
+                <a href="http://chick-fil-afoundation.org/junior-achievement"
+                  >Chick-fil-A Foundation Junior Achievement Capstone Facilities
+                  Map</a
+                ><br />
+                This project mapped several different locations and included a
+                detail modal. Each location consists of several operators that
+                are populated into a list below the map and must update when the
+                map point is clicked.
+              </li>
+            </ul>
+            <h3 class="noprint">Responsive Templates for MemberClicks</h3>
+            <ul class="noprint">
+              <li>
+                <a href="https://resp.memberclicks.net/decatur" target="_blank"
+                  >Decatur</a
+                >
+              </li>
+              <li>
+                <a href="https://resp.memberclicks.net/edgewood" target="_blank"
+                  >Edgewood</a
+                >
+              </li>
+              <li>
+                <a href="https://resp.memberclicks.net/marietta" target="_blank"
+                  >Marietta</a
+                >
+              </li>
+              <li>
+                <a href="https://resp.memberclicks.net/buckhead" target="_blank"
+                  >Buckhead</a
+                >
+              </li>
+              <li>
+                <a href="https://resp.memberclicks.net/vinings" target="_blank"
+                  >Vinings</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div id="education" class="main-section">
+            <h2>Education</h2>
+            <h3>University of Georgia</h3>
+            <p>
+              <strong
+                >Bachelor of Arts in Journalism, Advertising <br /><span
+                  class="sub-head"
+                  >December 2007</span
+                ></strong
+              >
+            </p>
+            <p>
+              <strong
+                >Bachelor of Science in Education, Sport Studies <br /><span
+                  class="sub-head"
+                  >December 2007</span
+                ></strong
+              >
+            </p>
+          </div>
+          <div id="contact" class="main-section noprint">
+            <h2>Contact</h2>
+            <p>
+              If you have any questions, please feel free to send me an email
+              and I'll get back to you as soon as possible.
+            </p>
+            <div class="button">
+              <a
+                href="mailto:kylepsullivan@gmail.com?subject=Message from Resume site"
+                >Send Me An Email</a
+              >
+            </div>
+          </div>
         </div>
+      </div>
     </div>
     <script src="./js/respond.ks.js"></script>
-</body>
-
+  </body>
 </html>
