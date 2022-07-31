@@ -412,12 +412,14 @@ label[for='menu-toggle'] {
 }
 
 .main-section {
-  padding-bottom: 140px;
+  margin-bottom: 40px;
+  min-height: 200px;
 }
 
 .sub-head {
   font-size: 85%;
   color: #7a7a7a;
+  display: block;
 }
 
 .main-section ul {
@@ -458,23 +460,20 @@ ul.less-margin {
 ul.flexlist {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  margin: 20px -10px 20px;
-  padding-top: 20px;
+  margin: 0 0 20px;
+  padding: 0;
 }
 
 ul.flexlist li {
-  padding: 5px 10px;
-  margin: 10px;
+  padding: 0;
   list-style: none;
-  border-radius: 3px;
-  border: 1px solid rgba(180, 180, 180, 0.75);
-  /*   box-shadow: 1px 1px 3px rgba(0,0,0,0.5) */
+  margin: 0 0 4px;
+  color: #424242;
+  flex: 1 0 50%;
 }
 
 li .skill {
   font-weight: 600;
-  display: block;
 }
 
 li .time {
@@ -482,17 +481,65 @@ li .time {
   font-weight: 100;
   font-size: 11px;
   text-align: center;
-  display: block;
   line-height: 11px;
 }
 
 .printonly {
   display: none;
 }
+
+.align-right {
+  text-align: right;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+@media (min-width: 650px) {
+  #left-col {
+    width: calc(60% - 40px);
+    margin-right: 40px;
+  }
+
+  #right-col {
+    width: 40%;
+    flex-shrink: 0;
+  }
+}
+
+.flexlist li .time:before {
+  content: "(";
+}
+
+.flexlist li .time:after {
+  content: ")";
+}
+
 @media print {
   .printonly {
     display: block;
   }
+
+  #left-col {
+    margin-right: 40px;
+    width: calc(100% - 320px);
+    flex-shrink: 1;
+  }
+
+  #right-col {
+    width: 280px;
+    flex-shrink: 0;
+  }
+
+  .break-after {
+    page-break-after: always;
+  }
+
   .fixed-container {
     display: block;
     height: auto;
@@ -501,18 +548,15 @@ li .time {
     box-shadow: none;
     border-bottom: 1px solid gray;
   }
+
   .fixed-container header {
     display: flex;
     justify-content: space-between;
-  }
-
-  ul.flexlist {
-    margin-top: 0;
-    padding-top: 20px;
+    padding: 0;
   }
 
   .main-container {
-    padding-top: 30px;
+    padding: 30px 0 0;
   }
 
   .noprint {
@@ -523,25 +567,9 @@ li .time {
     padding: 0;
   }
 
-  .main-section ul {
+  .main-section ul:not(.flexlist) {
     list-style: disc outside none;
     padding-left: 16px;
-  }
-
-  #left-col {
-    float: left;
-    width: 70%;
-    padding-right: 40px;
-    box-sizing: border-box;
-  }
-  #right-col {
-    float: left;
-    width: 30%;
-  }
-
-  #right-col li {
-    margin-bottom: 4px;
-    color: #424242;
   }
 
   a,
@@ -549,9 +577,11 @@ li .time {
     color: #424242;
     text-decoration: none;
   }
+
   a:after {
     content: ' [' attr(href) ']';
   }
+
   .site-width {
     max-width: none;
   }
