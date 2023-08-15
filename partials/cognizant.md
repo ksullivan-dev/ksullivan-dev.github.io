@@ -2,5 +2,5 @@
 
 **Tech:** React, Redux, Material UI, Cypress, React Testing Library
 
-- Developed features for a Point of Sale application, contributing to codebase improvements and creating a proof of concept for a more efficient directory structure.
-- Implemented reusable components and participated in code reviews and sprint planning sessions.
+- Developed and enhanced features for a Point of Sale application, optimizing the codebase and introducing a more efficient directory structure.
+- Implemented reusable components, actively participated in code reviews and sprint planning sessions, and collaborated effectively within cross-functional teams.

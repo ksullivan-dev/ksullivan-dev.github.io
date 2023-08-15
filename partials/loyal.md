@@ -2,6 +2,6 @@
 
 **Tech:** React, Redux, Styled Components, Webpack, Babel, Cypress
 
-- Crafted dynamic frontends for healthcare applications, enforcing javascript code standards and refactoring legacy codebase for modernization.
-- Contributed to reusable component library, provided input on user experience, and offered design feedback.
-- Built documentation site for internal employees and external developers.
+- Crafted dynamic and responsive frontends for healthcare applications, enforcing high coding standards and modernizing a legacy codebase.
+- Played a pivotal role in building a reusable component library and provided valuable input on user experience and design enhancements.
+- Developed a comprehensive documentation site catering to both internal employees and external developers.

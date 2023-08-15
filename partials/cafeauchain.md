@@ -2,6 +2,6 @@
 
 **Tech:** React, Ruby, Ruby on Rails, Postgres, AWS
 
-- Designed, built, and maintained SaaS web app frontend, incorporating inventory and production management as well as wholesale ordering features.
+- Designed, developed, and maintained a feature-rich SaaS web app frontend, integrating essential inventory, production, and ordering management functionalities.
 - Integrated payment processor (Stripe) and shipping API (EasyPost) for streamlined user experience.
-- Incorporated feedback from end users to drive new features and shape roadmap
+- Actively collected and implemented user feedback to drive continuous feature improvements and roadmap development.
