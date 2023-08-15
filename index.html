@@ -1,122 +1,137 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-  <title>Kyle Sullivan - Resume</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="./stylesheets/css/application.css" />
-  <link href="https://fonts.googleapis.com/css?family=Merriweather|Roboto:400,700" rel="stylesheet" type="text/css" />
-  <!-- 
+  <head>
+    <title>Kyle Sullivan - Resume</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./stylesheets/css/application.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Merriweather|Roboto:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- 
       If you are looking at this, you'll know that this version of jquery is
       out of date by a few major versions. But if it ain't broke, ... 
     -->
-  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-</head>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  </head>
 
-<body>
-  <div class="site-width">
-    <div id="breakpoints">
-      <div id="desktop"></div>
-      <div id="tablet"></div>
-      <div id="mobile"></div>
-    </div>
-    <div class="fixed-container">
-      <header>
-        <div class="printonly">
-          1170 Crabapple Cir<br />Watkinsville, GA 30677
-        </div>
-        <h1>Kyle Sullivan</h1>
-        <div class="printonly align-right">706.877.1115<br />kylepsullivan@gmail.com</div>
-      </header>
-      <div class="noprint">
-        <input type="checkbox" id="menu-toggle" />
-        <label for="menu-toggle"><span class="menu-icon"></span></label>
-        <div class="menu-container">
-          <ul class="main-menu menu">
-            <li><a href="#intro">Intro</a></li>
-            <li><a href="#previous">Previous Experience</a></li>
-            <li><a href="#other">Other Jobs</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
+  <body>
+    <div class="site-width">
+      <div id="breakpoints">
+        <div id="desktop"></div>
+        <div id="tablet"></div>
+        <div id="mobile"></div>
       </div>
-    </div>
-    <div class="main-container">
-      <div id="intro" class="main-section flex flex-wrap break-after">
-        <div id="partials-intro"></div>
-        <div id="left-col">
-          <h2>Experience</h2>
-          <div class="job-container" id="partials-leaflink"></div>
-        </div>
-        <div id="right-col">
-          <div id="partials-skills"></div>
-          <div id="partials-education" style="margin: 40px 0;"></div>
-        </div>
-      </div>
-      <div id="previous" class="main-section">
-        <div class="job-container" id="partials-cognizant">
-        </div>
-        <div class="job-container" id="partials-loyal">
-        </div>
-        <div class="job-container" id="partials-cafeauchain">
-        </div>
-        <div class="printonly sub-head" style="margin-top: -20px;">Additional experience available upon request</div>
-        <div class="job-container noprint" id="partials-hounddog">
-        </div>
-        <div class="job-container noprint" id="partials-roundsphere">
-        </div>
-        <div class="job-container noprint" id="partials-dynamix""">
-        </div>
-        <div class="job-container noprint" id="partials-memberclicks">
-        </div>
-        <div class="job-container noprint" id="partials-kitchensink">
-        </div>
-      </div>
-      <div class="noprint">
-        <div id="other" class="main-section">
-          <h2>Other Jobs</h2>
-          <div id="partials-other"></div>
-        </div>
-        <div id="portfolio" class="main-section">
-          <h2>Portfolio</h2>
-          <div id="partials-portfolio">
+      <div class="fixed-container">
+        <header>
+          <div class="printonly">
+            1170 Crabapple Cir<br />Watkinsville, GA 30677
           </div>
-        </div>
-        <div id="contact" class="main-section">
-          <h2>Contact</h2>
-          <p>
-            If you have any questions, please feel free to send me an email
-            and I'll get back to you as soon as possible.
-          </p>
-          <div class="button">
-            <a href="mailto:kylepsullivan@gmail.com?subject=Message from Resume site">Send Me An Email</a>
+          <h1>Kyle Sullivan</h1>
+          <div class="printonly align-right">
+            706-877-1115<br />kylepsullivan@gmail.com
+          </div>
+        </header>
+        <div class="noprint">
+          <input type="checkbox" id="menu-toggle" />
+          <label for="menu-toggle"><span class="menu-icon"></span></label>
+          <div class="menu-container">
+            <ul class="main-menu menu">
+              <li><a href="#intro">Intro</a></li>
+              <li><a href="#previous">Previous Experience</a></li>
+              <li><a href="#other">Other Jobs</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
           </div>
         </div>
       </div>
+      <div class="main-container">
+        <div id="intro" class="main-section flex flex-wrap break-after">
+          <div id="partials-intro"></div>
+          <div id="left-col">
+            <h2>Experience</h2>
+            <div class="job-container" id="partials-leaflink"></div>
+            <div
+              class="job-container"
+              id="partials-cognizant"
+              style="margin-bottom: 0"
+            ></div>
+          </div>
+          <div id="right-col">
+            <div id="partials-skills"></div>
+            <div id="partials-education" style="margin: 40px 0"></div>
+          </div>
+        </div>
+        <div id="previous" class="main-section">
+          <div class="job-container" id="partials-loyal"></div>
+          <div class="job-container" id="partials-cafeauchain"></div>
+          <div class="printonly sub-head" style="margin-top: -20px">
+            Additional experience and references available upon request
+          </div>
+          <div
+            class="printonly"
+            id="partials-contact"
+            style="margin-top: 40px"
+          ></div>
+          <div class="job-container noprint" id="partials-hounddog"></div>
+          <div class="job-container noprint" id="partials-roundsphere"></div>
+          <div class="job-container noprint" id="partials-dynamix"></div>
+          <div class="job-container noprint" id="partials-memberclicks"></div>
+          <div class="job-container noprint" id="partials-kitchensink"></div>
+        </div>
+        <div class="noprint">
+          <div id="other" class="main-section">
+            <h2>Other Jobs</h2>
+            <div id="partials-other"></div>
+          </div>
+          <div id="portfolio" class="main-section">
+            <h2>Portfolio</h2>
+            <div id="partials-portfolio"></div>
+          </div>
+          <div id="contact" class="main-section">
+            <h2>Contact</h2>
+            <p>
+              If you have any questions, please feel free to send me an email
+              and I'll get back to you as soon as possible.
+            </p>
+            <div class="button">
+              <a
+                href="mailto:kylepsullivan@gmail.com?subject=Message from Resume site"
+                >Send Me An Email</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-  <script src="./js/respond.ks.js"></script>
-  <script src="./js/addNode.js"></script>
-  <script>
-    const partials = [
-      'skills',
-      'education',
-      'intro',
-      'leaflink',
-      'cognizant',
-      'loyal',
-      'cafeauchain',
-      'hounddog',
-      'roundsphere',
-      'dynamix',
-      'memberclicks',
-      'kitchensink',
-      'other',
-      'portfolio'
-    ];
-    partials.forEach(addNode);
-  </script>
-</body>
-
+    <script src="https://cdn.jsdelivr.net/npm/showdown/dist/showdown.min.js"></script>
+    <script>
+      showdown.setFlavor("github");
+      showdown.setOption("simplifiedAutoLink", false);
+    </script>
+    <script src="./js/respond.ks.js"></script>
+    <script src="./js/addNode.js"></script>
+    <script>
+      const partials = [
+        "skills",
+        "education",
+        "contact",
+        "intro",
+        "leaflink",
+        "cognizant",
+        "loyal",
+        "cafeauchain",
+        "hounddog",
+        "roundsphere",
+        "dynamix",
+        "memberclicks",
+        "kitchensink",
+        "other",
+        "portfolio",
+      ];
+      partials.forEach(addNode);
+    </script>
+  </body>
 </html>
