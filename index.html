@@ -62,19 +62,20 @@
           <div id="right-col">
             <div id="partials-skills"></div>
             <div id="partials-education" style="margin: 40px 0"></div>
+            <div
+              class="printonly"
+              id="partials-contact"
+              style="margin-top: 40px"
+            ></div>
           </div>
         </div>
         <div id="previous" class="main-section">
           <div class="job-container" id="partials-loyal"></div>
           <div class="job-container" id="partials-cafeauchain"></div>
+          <div class="job-container printonly" id="partials-other"></div>
           <div class="printonly sub-head" style="margin-top: -20px">
             Additional experience and references available upon request
           </div>
-          <div
-            class="printonly"
-            id="partials-contact"
-            style="margin-top: 40px"
-          ></div>
           <div class="job-container noprint" id="partials-hounddog"></div>
           <div class="job-container noprint" id="partials-roundsphere"></div>
           <div class="job-container noprint" id="partials-dynamix"></div>
@@ -84,7 +85,7 @@
         <div class="noprint">
           <div id="other" class="main-section">
             <h2>Other Jobs</h2>
-            <div id="partials-other"></div>
+            <div id="partials-nondev"></div>
           </div>
           <div id="portfolio" class="main-section">
             <h2>Portfolio</h2>
@@ -123,12 +124,13 @@
         "cognizant",
         "loyal",
         "cafeauchain",
+        "other",
         "hounddog",
         "roundsphere",
         "dynamix",
         "memberclicks",
         "kitchensink",
-        "other",
+        "nondev",
         "portfolio",
       ];
       partials.forEach(addNode);
