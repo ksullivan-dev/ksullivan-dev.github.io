@@ -1,69 +1,75 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Kyle Sullivan - Resume</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="./stylesheets/css/application.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Merriweather|Roboto:400,700"
-      rel="stylesheet"
-      type="text/css"
-    />
-  </head>
 
-  <body class="intake">
-    <div class="site-width">
-      <div class="fixed-container">
-        <header>
-          <div>1170 Crabapple Cir<br />Watkinsville, GA 30677</div>
-          <h1>Kyle Sullivan</h1>
-          <div class="align-right">
-            706-877-1115<br />kylepsullivan@gmail.com
+<head>
+  <title>Kyle Sullivan - Resume</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="./stylesheets/css/application.css" />
+  <link href="https://fonts.googleapis.com/css?family=Merriweather|Roboto:400,700" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="intake">
+  <div class="site-width">
+    <div class="fixed-container">
+      <header>
+        <div>1170 Crabapple Cir<br />Watkinsville, GA 30677</div>
+        <h1>Kyle Sullivan</h1>
+        <div class="align-right">
+          706-877-1115<br />kylepsullivan@gmail.com
+        </div>
+      </header>
+    </div>
+    <div class="main-container">
+      <div class="main-section">
+        <div id="partials-intro" style="padding-bottom: 20px"></div>
+        <h2>Experience</h2>
+        <div class="job-container" id="partials-evolutioniq"></div>
+        <div class="job-container" id="partials-leaflink"></div>
+        <div class="job-container" id="partials-cognizant"></div>
+        <div class="job-container" id="partials-loyal"></div>
+        <div class="job-container" id="partials-cafeauchain" style="margin-bottom: 30px;"></div>
+        <div class="job-container" style="margin-bottom: 30px;">
+          <h3><span class="sub-head">Additional Roles</span></h3>
+          <div id="partials-other"
+            style="display: grid; gap: 0 40px; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr;"></div>
+
+        </div>
+        <!-- <div class="job-container" id="partials-other"></div> -->
+        <div style="display: flex; gap: 40px; margin-bottom: 20px;">
+          <div id="partials-skills" style="flex: 0 0 60%"></div>
+          <div style="flex: 0 0 40%">
+            <div id="partials-education"></div>
+            <div id="partials-contact" style="margin-top: 40px"></div>
           </div>
-        </header>
-      </div>
-      <div class="main-container">
-        <div class="main-section">
-          <div id="partials-intro" style="padding-bottom: 20px"></div>
-          <h2>Experience</h2>
-          <div class="job-container" id="partials-leaflink"></div>
-          <div class="job-container" id="partials-cognizant"></div>
-          <div class="job-container" id="partials-loyal"></div>
-          <div class="job-container" id="partials-cafeauchain"></div>
-          <div class="job-container" id="partials-other"></div>
-          <div style="display: flex; gap: 40px; margin-bottom: 20px">
-            <div id="partials-skills" style="flex: 0 0 60%"></div>
-            <div style="flex: 0 0 40%">
-              <div id="partials-education"></div>
-              <div id="partials-contact" style="margin-top: 40px"></div>
-            </div>
-          </div>
-          <div class="section-separator"></div>
-          <div class="sub-head" style="margin-top: 40px">
-            Additional experience and references available upon request
-          </div>
+        </div>
+        <div class="section-separator"></div>
+        <div class="sub-head" style="margin-top: 20px">
+          Additional experience and references available upon request
         </div>
       </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/showdown/dist/showdown.min.js"></script>
-    <script>
-      showdown.setFlavor("github");
-      showdown.setOption("simplifiedAutoLink", false);
-    </script>
-    <script src="./js/addNode.js"></script>
-    <script>
-      const partials = [
-        "skills",
-        "education",
-        "contact",
-        "intro",
-        "leaflink",
-        "cognizant",
-        "loyal",
-        "cafeauchain",
-        "other",
-      ];
-      partials.forEach(addNode);
-    </script>
-  </body>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/showdown/dist/showdown.min.js"></script>
+  <script>
+    showdown.setFlavor("github");
+    showdown.setOption("simplifiedAutoLink", false);
+  </script>
+  <script src="./js/addNode.js"></script>
+  <script>
+    const partials = [
+      "skills",
+      "education",
+      "contact",
+      "intro",
+      "evolutioniq",
+      "leaflink",
+      "cognizant",
+      "loyal",
+      "cafeauchain",
+      "other",
+    ];
+    partials.forEach(addNode);
+  </script>
+</body>
+
 </html>
